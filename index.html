@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서버연결 연습</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin:0">
+    <!--<div id="buttonContainer">
+        <button onclick="onGeoOk()">정보불러오기</button>
+        <button onclick="goData()">정보보내기</button>
+    </div>
+    <p id="id"></p>
+    <p id="content"></p>
+    <img id="emoji">-->
+    <form id="myForm">
+        
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+        
+        <label for="content">Content:</label>
+        <input type="text" id="content" name="content" required><br><br>
+        
+        <label for="pictureUrl">Picture URL:</label>
+        <input type="text" id="pictureUrl" name="pictureUrl"><br><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
+<!--<div id="buttonContainer">
+    <button onclick="onGeoOk()">정보불러오기</button>
+    <button onclick="goData()">정보보내기</button>
+</div>
+<p id="id"></p>
+<p id="content"></p>
+<img id="emoji">
+<form 
+    action="https://port-0-tofaker-backend-lzsaeexf05f2c47e.sel4.cloudtype.app/api/v1/feed"
+    method="post" 
+    enctype="multipart/form-data">
+        <div>
+            <p>
+                아이디: <input type="text" id="title">
+            </p>
+            <p>
+                비밀번호: <input type="password" id="content">
+            </p>
+            <input type="submit">
+        </div>
+    </form>-->
