@@ -24,6 +24,9 @@ onGeoOk();
 
 function submitForm() {
     const form = document.getElementById('myForm');
+
+    console.log(form)
+
     const formData = new FormData(form);
 
     const url = 'https://port-0-tofaker-backend-lzsaeexf05f2c47e.sel4.cloudtype.app/api/v1/feed'; // API의 URL로 변경하세요.
