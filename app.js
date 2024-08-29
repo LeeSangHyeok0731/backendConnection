@@ -26,9 +26,11 @@ function submitForm() {
     const form = document.getElementById('myForm');
     const formData = new FormData(form);
 
-    console.log(formData)
-
     const url = 'https://port-0-tofaker-backend-lzsaeexf05f2c47e.sel4.cloudtype.app/api/v1/feed'; // API의 URL로 변경하세요.
+
+    for (const [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+    }
 
     fetch(url, {
         method: 'POST',
