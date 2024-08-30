@@ -7,26 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="margin:0">
-    <!--<div id="buttonContainer">
-        <button onclick="onGeoOk()">정보불러오기</button>
-        <button onclick="goData()">정보보내기</button>
-    </div>
-    <p id="id"></p>
-    <p id="content"></p>
-    <img id="emoji">-->
-    <form id="myForm">
-        
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required><br><br>
-        
-        <label for="content">Content:</label>
-        <input type="text" id="content" name="content" required><br><br>
-        
-        <label for="pictureUrl">Picture URL:</label>
-        <input type="text" id="pictureUrl" name="pictureUrl"><br><br>
+    <div id="wrapper">
+        <div id="buttonContainer">
+            <button onclick="onGeoOk()">정보불러오기</button>
+            <button onclick="goData()">정보보내기</button>
+        </div>
+        <p id="id"></p>
+        <p id="content"></p>
+        <img id="emoji">
 
-        <button type="button" onclick="submitForm()">Submit</button>
-    </form>
+        <form id="myForm">
+            
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            
+            <label for="content">Content:</label>
+            <input type="text" id="content" name="content" required><br><br>
+            
+            <label for="pictureUrl">Picture URL:</label>
+            <input type="text" id="pictureUrl" name="pictureUrl"><br><br>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>

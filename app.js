@@ -3,7 +3,7 @@ function onGeoOk() {
     fetch(url).then(response => response.json())
     .then(data => {
         console.log(data)
-        /*const idNumber = document.getElementById("id");
+        const idNumber = document.getElementById("id");
         const contents = document.getElementById("content");
         idNumber.innerText = data.id;
         contents.innerText = data.title;
@@ -16,7 +16,6 @@ function onGeoOk() {
            Img.height =Img.naturalHeight / 8;
         };
         Img.src = data.pictureUrl;
-*/
     });
 }
 
